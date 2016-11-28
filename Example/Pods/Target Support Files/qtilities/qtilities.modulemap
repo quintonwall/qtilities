@@ -1,0 +1,6 @@
+framework module qtilities {
+  umbrella header "qtilities-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - qtilities (0.1.0)
+
+DEPENDENCIES:
+  - qtilities (from `../`)
+
+EXTERNAL SOURCES:
+  qtilities:
+    :path: ../
+
+SPEC CHECKSUMS:
+  qtilities: e2825d6e0c7e84cb65e78c2876c9734031c8b9f9
+
+PODFILE CHECKSUM: 0fdb2988df5cbaab25cdc2c6538142c1ac90fe51
+
+COCOAPODS: 1.1.1

@@ -18,6 +18,7 @@ public class SObject  {
     public var createdDate : NSDate?
     public var lastModifiedById: String?
     public var lastModifiedDate : NSDate?
+    public var type: String?
     
     
     public init(objectType: String) {

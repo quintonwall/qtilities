@@ -24,12 +24,7 @@ extension UIColor {
     public class func hsb(h: CGFloat, _ s: CGFloat, _ b: CGFloat) -> UIColor {
         return UIColor(hue: h, saturation: s, brightness: b, alpha: 1.0)
     }
-    static func randomColor() -> UIColor {
-        return UIColor(red:   .random(),
-                       green: .random(),
-                       blue:  .random(),
-                       alpha: 1.0)
-    }
+  
     
     public class func flatBlackColor() -> UIColor {
         return hsb(0, 0, 17)

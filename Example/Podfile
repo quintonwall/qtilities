@@ -3,6 +3,7 @@ use_frameworks!
  def shared_pods
   pod 'SwiftlySalesforce'
   pod 'SwiftyJSON', '~> 2.0'
+  pod 'FCAlertView', :git => 'https://github.com/nimati/FCAlertView'
 end
 
  target 'qtilities_Example' do

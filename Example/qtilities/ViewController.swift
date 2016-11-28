@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import SwiftlySalesforce
+import FCAlertView
+import PromiseKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +23,32 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func loginTapped(sender: AnyObject) {
+        showLogMeInScreen()
+    }
+    
+    private func showLogMeInScreen() {
+        
+        firstly {
+            SalesforceAPI.Identity.request()
+            
+            }.then {_ in
+                self.dismissViewControllerAnimated(true, completion: {
+                   print("dismissing")
+                    
+                })
+            }.then { _ in
+                self.performSegueWithIdentifier("accounts", sender: self)
+            }.error { _ in
+                let fcdialog = FCAlertView()
+                fcdialog.showAlertInView(self, withTitle: "Kaboom!", withSubtitle: "Something gone bust.", withCustomImage: UIImage(named: "close-x"), withDoneButtonTitle: "OK", andButtons: nil)
+                fcdialog.colorScheme = fcdialog.flatGreen
+                fcdialog.dismissOnOutsideTouch = true
+        }
+        
+        
     }
 
 }

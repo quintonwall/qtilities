@@ -2,6 +2,9 @@ use_frameworks!
 
 target 'qtilities_Example' do
   pod 'qtilities', :path => '../'
+  
+  source 'https://github.com/forcedotcom/SalesforceMobileSDK-iOS-Specs.git' 
+  source 'https://github.com/CocoaPods/Specs.git'
 
   target 'qtilities_Tests' do
     inherit! :search_paths

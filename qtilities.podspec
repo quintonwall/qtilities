@@ -18,28 +18,30 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A collection of crazy helpful utilities for working with Salesforce from iOS, Apple TV, and Mac apps                       DESC
+A collection of crazy helpful utilities for working with Salesforce from iOS, Apple TV, and Mac apps
+		DESC
+
+    s.description  = <<-DESC
+    "A collection of crazy helpful utilities for working with Salesforce from iOS, Apple TV, and Mac apps"
+                   DESC
 
   s.homepage         = 'https://github.com/quintonwall/qtilities'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'GPL-3.0', :file => 'LICENSE' }
   s.author           = { 'Quinton Wall' => 'quinton_wall@hotmail.com' }
   s.source           = { :git => 'https://github.com/quintonwall/qtilities.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/quintonwall'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'qtilities/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'qtilities' => ['qtilities/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'SwiftyJSON'
-   s.dependency ''
-   s.dependency 'SalesforceSDKCore'
-   s.dependency 'SalesforceNetwork'
-   s.dependency 'SalesforceRestAPI'
+   s.dependency 'SwiftyJSON', '~> 2.0'
+   s.dependency 'SwiftlySalesforce'
 end

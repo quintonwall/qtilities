@@ -1,14 +1,19 @@
 use_frameworks!
 
-target 'qtilities_Example' do
-  pod 'qtilities', :path => '../'
-  
-  source 'https://github.com/forcedotcom/SalesforceMobileSDK-iOS-Specs.git' 
-  source 'https://github.com/CocoaPods/Specs.git'
-
-  target 'qtilities_Tests' do
-    inherit! :search_paths
-
-    
-  end
+ def shared_pods
+  pod 'SwiftlySalesforce'
+  pod 'SwiftyJSON', '~> 2.0'
 end
+
+ target 'qtilities_Example' do
+   platform :ios, '9.3'
+
+   source 'https://github.com/CocoaPods/Specs.git'
+   pod 'qtilities', :path => '../'
+  
+   #source 'https://github.com/forcedotcom/SalesforceMobileSDK-iOS-Specs.git' 
+ 
+   shared_pods
+ end
+
+

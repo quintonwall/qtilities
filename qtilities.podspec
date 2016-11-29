@@ -44,4 +44,5 @@ A collection of crazy helpful utilities for working with Salesforce from iOS, Ap
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'SwiftyJSON', '~> 2.0'
    s.dependency 'SwiftlySalesforce'
+   s.dependency 'SDWebImage'
 end

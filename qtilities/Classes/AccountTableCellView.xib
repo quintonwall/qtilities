@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16C48b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="accounttableviewcell" id="iN0-l3-epB" customClass="AccountTableViewCell" customModule="qtilities">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yu4-7j-ZNs">
+                    <rect key="frame" x="90" y="20" width="480" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.16862745100000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SCb-Gw-h1N" userLabel="SocialImage">
+                    <rect key="frame" x="10" y="20" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="7DG-Q2-C7L"/>
+                        <constraint firstAttribute="height" constant="70" id="jgg-Js-hdg"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Street Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLz-w9-KpH">
+                    <rect key="frame" x="90" y="50" width="480" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.16862745100000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City, State, Zip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENa-jR-f73">
+                    <rect key="frame" x="90" y="81" width="480" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.16862745100000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01/01/16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOH-9S-thV" userLabel="LastUpdated">
+                    <rect key="frame" x="8" y="110" width="70" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="aMb-WW-Gn0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.16862745100000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map-pin" translatesAutoresizingMaskIntoConstraints="NO" id="KRb-KL-IPP">
+                    <rect key="frame" x="540" y="105" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8je-mx-YKf"/>
+                        <constraint firstAttribute="width" constant="30" id="hkF-f1-lUg"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bus-phone" translatesAutoresizingMaskIntoConstraints="NO" id="StA-uG-DIw">
+                    <rect key="frame" x="495" y="105" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Toz-x1-Hy8"/>
+                        <constraint firstAttribute="width" constant="30" id="Z0t-el-zdi"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SCb-Gw-h1N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="3CH-Vs-ucP"/>
+                <constraint firstItem="eLz-w9-KpH" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="7gz-o6-0Ga"/>
+                <constraint firstItem="ENa-jR-f73" firstAttribute="top" secondItem="eLz-w9-KpH" secondAttribute="bottom" constant="10" id="7ip-BF-M8r"/>
+                <constraint firstAttribute="bottom" secondItem="KRb-KL-IPP" secondAttribute="bottom" constant="5" id="DsG-I0-UuK"/>
+                <constraint firstItem="eLz-w9-KpH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="90" id="EYr-oh-VHP"/>
+                <constraint firstItem="ENa-jR-f73" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="J5X-HQ-QYG"/>
+                <constraint firstItem="MOH-9S-thV" firstAttribute="top" secondItem="SCb-Gw-h1N" secondAttribute="bottom" constant="20" id="Une-F1-4rB"/>
+                <constraint firstItem="MOH-9S-thV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="WCR-JG-TTd"/>
+                <constraint firstItem="Yu4-7j-ZNs" firstAttribute="leading" secondItem="SCb-Gw-h1N" secondAttribute="trailing" constant="10" id="brx-g7-EZG"/>
+                <constraint firstAttribute="bottom" secondItem="StA-uG-DIw" secondAttribute="bottom" constant="5" id="g7x-j6-Gu9"/>
+                <constraint firstItem="Yu4-7j-ZNs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="jLn-ZH-3eE"/>
+                <constraint firstItem="Yu4-7j-ZNs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="pZR-3n-dhf"/>
+                <constraint firstItem="SCb-Gw-h1N" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="r3K-lh-ioC"/>
+                <constraint firstItem="KRb-KL-IPP" firstAttribute="leading" secondItem="StA-uG-DIw" secondAttribute="trailing" constant="15" id="rmc-Rc-vus"/>
+                <constraint firstItem="eLz-w9-KpH" firstAttribute="top" secondItem="Yu4-7j-ZNs" secondAttribute="bottom" constant="10" id="s95-OG-fof"/>
+                <constraint firstItem="Yu4-7j-ZNs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="t2n-bA-dke"/>
+                <constraint firstItem="Yu4-7j-ZNs" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="uBy-Tp-myc"/>
+                <constraint firstItem="ENa-jR-f73" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="90" id="uQv-rp-mNU"/>
+                <constraint firstAttribute="trailing" secondItem="KRb-KL-IPP" secondAttribute="trailing" constant="30" id="vKG-fP-QOR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="pZR-3n-dhf"/>
+                    <exclude reference="t2n-bA-dke"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="accountName" destination="Yu4-7j-ZNs" id="fEn-rj-muH"/>
+                <outlet property="cityStateZip" destination="ENa-jR-f73" id="TYU-I6-z4e"/>
+                <outlet property="lastUpdated" destination="MOH-9S-thV" id="jeY-VO-h8T"/>
+                <outlet property="locationButton" destination="KRb-KL-IPP" id="oyW-nV-wT6"/>
+                <outlet property="phoneButton" destination="StA-uG-DIw" id="h0Y-Tz-k29"/>
+                <outlet property="socialImageView" destination="SCb-Gw-h1N" id="vnl-xA-ixd"/>
+                <outlet property="streetAddress" destination="eLz-w9-KpH" id="QOS-XL-fej"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="bus-phone" width="22" height="17"/>
+        <image name="map-pin" width="15" height="22"/>
+    </resources>
+</document>

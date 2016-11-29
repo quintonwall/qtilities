@@ -8,7 +8,7 @@
 //
 //
 
-
+import SwiftyJSON
 
 public class SObject  {
     
@@ -21,13 +21,21 @@ public class SObject  {
     public var type: String?
     
     
-    public init(objectType: String) {
+    public init(objectType: String, json: JSON) {
         type =  objectType
+        id = json["Id"].stringValue
+        isDeleted = json["IsDeleted"].boolValue
+        createdById = json["CreatedById"].stringValue
+        createdDate = json["CreatedDate"].systemdate
+        lastModifiedById = json["lastModifiedById"].stringValue
+        lastModifiedDate = json["CreatedDate"].systemdate
+       
     }
     
     
     
 }
+
 
 
 struct SObjectType {
